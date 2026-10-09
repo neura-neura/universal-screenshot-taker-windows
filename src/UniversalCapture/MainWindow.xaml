@@ -1,0 +1,139 @@
+﻿<Window x:Class="UniversalCapture.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:core="using:UniversalCapture.Core" Title="Universal Screenshot Taker">
+ <Window.SystemBackdrop><MicaBackdrop /></Window.SystemBackdrop>
+ <Grid x:Name="Root">
+  <Grid.Resources>
+   <Style x:Key="Card" TargetType="Border"><Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}"/><Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}"/><Setter Property="BorderThickness" Value="1"/><Setter Property="CornerRadius" Value="8"/><Setter Property="Padding" Value="24"/></Style>
+   <Style x:Key="Section" TargetType="TextBlock" BasedOn="{StaticResource SubtitleTextBlockStyle}"/>
+  </Grid.Resources>
+  <Grid.RowDefinitions><RowDefinition Height="48"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+  <Grid x:Name="AppTitleBar" Background="Transparent"><TextBlock Text="Universal Screenshot Taker" Margin="20,0,140,0" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}"/></Grid>
+  <NavigationView x:Name="Nav" Grid.Row="1" IsBackButtonVisible="Collapsed" IsSettingsVisible="False" PaneDisplayMode="Auto" OpenPaneLength="236" SelectionChanged="Navigate">
+   <NavigationView.MenuItems>
+    <NavigationViewItem Content="Capturar" Tag="capture" Icon="Camera"/>
+    <NavigationViewItem Content="Galería" Tag="gallery" Icon="Pictures"/>
+    <NavigationViewItem Content="Reconocer texto" Tag="ocr" Icon="Edit"/>
+    <NavigationViewItem Content="Exportar" Tag="export" Icon="Save"/>
+    <NavigationViewItem Content="Proyectos" Tag="projects" Icon="Folder"/>
+   </NavigationView.MenuItems>
+   <NavigationView.FooterMenuItems><NavigationViewItem Content="Ayuda" Tag="help" Icon="Help"/></NavigationView.FooterMenuItems>
+   <Grid Margin="24,16,24,24">
+    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+    <InfoBar x:Name="Notice" IsOpen="False" IsClosable="True" Margin="0,0,0,16"/>
+    <ScrollViewer x:Name="CaptureView" Grid.Row="1" HorizontalScrollBarVisibility="Disabled">
+     <StackPanel x:Name="CaptureControls" Spacing="16" MaxWidth="880">
+      <TextBlock Text="Captura de páginas" Style="{StaticResource TitleTextBlockStyle}"/>
+      <TextBlock Text="Abre tu lector, elige el campo de página y encuadra el contenido." TextWrapping="Wrap" Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+      <Border Style="{StaticResource Card}"><StackPanel Spacing="16">
+       <TextBlock Text="1. Abre el lector" Style="{StaticResource Section}"/>
+       <TextBox x:Name="UrlBox" Header="Dirección del sitio" PlaceholderText="https://…" TextChanged="SettingChanged" AutomationProperties.AutomationId="Url"/>
+       <StackPanel Orientation="Horizontal" Spacing="8"><Button Content="Abrir navegador" Click="OpenBrowser"/><Button Content="Lector de prueba" Click="OpenFixture"/></StackPanel>
+       <TextBlock Text="Usa el navegador seleccionado en Ayuda con tu sesión actual." TextWrapping="Wrap" Style="{StaticResource CaptionTextBlockStyle}"/>
+      </StackPanel></Border>
+      <Border Style="{StaticResource Card}"><StackPanel Spacing="16">
+       <TextBlock Text="2. Elige campo y área" Style="{StaticResource Section}"/>
+       <ComboBox x:Name="FieldModeBox" Header="Método del campo" SelectedIndex="0" SelectionChanged="SettingChanged" HorizontalAlignment="Stretch"><ComboBoxItem Content="Dentro del navegador (DOM)" Tag="dom"/><ComboBoxItem Content="Accesibilidad de Windows (compatibilidad)" Tag="visual"/><ComboBoxItem Content="Selector CSS" Tag="css"/><ComboBoxItem Content="Fragmento HTML" Tag="html"/><ComboBoxItem Content="Campo enfocado" Tag="active"/><ComboBoxItem Content="eLibro" Tag="elibro"/></ComboBox>
+       <StackPanel Orientation="Horizontal" Spacing="8"><Button Content="Seleccionar campo" Click="PickField" AutomationProperties.AutomationId="PickField"/><Button Content="Seleccionar área" Click="PickArea" AutomationProperties.AutomationId="PickArea"/></StackPanel>
+       <TextBlock x:Name="SelectionStatus" Text="Campo y área pendientes" TextWrapping="Wrap"/>
+       <StackPanel Orientation="Horizontal" Spacing="16"><CheckBox x:Name="CornersBox" Content="Dos esquinas" Checked="SettingChanged" Unchecked="SettingChanged"/><CheckBox x:Name="OutlineBox" Content="Mostrar contorno" IsChecked="True" Checked="SettingChanged" Unchecked="SettingChanged"/></StackPanel>
+       <Expander Header="Conexión y método de selección" HorizontalAlignment="Stretch"><StackPanel Spacing="12">
+        <TextBlock Text="Conecta el complemento incluido desde Ayuda. El modo DOM selecciona y captura dentro de la pestaña, sin mover el mouse ni cubrir los monitores." TextWrapping="Wrap"/>
+        
+        <TextBox x:Name="SelectorBox" Header="Selector o fragmento HTML" PlaceholderText="#page-number" TextChanged="SettingChanged"/>
+        <StackPanel Orientation="Horizontal" Spacing="8"><Button Content="Localizar campo web" Click="LocateWebField"/><Button Content="Área de elemento web" Click="LocateWebArea"/></StackPanel>
+       </StackPanel></Expander>
+      </StackPanel></Border>
+      <Border Style="{StaticResource Card}"><StackPanel Spacing="16">
+       <TextBlock Text="3. Configura y captura" Style="{StaticResource Section}"/>
+       <ComboBox x:Name="ModeBox" Header="Modo de captura" SelectedIndex="0" SelectionChanged="SettingChanged" HorizontalAlignment="Stretch"><ComboBoxItem Content="Automático · rango de páginas" Tag="automatic"/><ComboBoxItem Content="Semiautomático · capturar y avanzar" Tag="semi"/><ComboBoxItem Content="Manual · capturar vista actual" Tag="manual"/></ComboBox>
+       <Grid ColumnSpacing="16"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions><NumberBox x:Name="FirstBox" Header="Primera página" Minimum="1" Maximum="100000" Value="1" SpinButtonPlacementMode="Compact" ValueChanged="SettingChanged"/><NumberBox x:Name="LastBox" Grid.Column="1" Header="Última página" Minimum="1" Maximum="100000" Value="10" SpinButtonPlacementMode="Compact" ValueChanged="SettingChanged"/></Grid>
+       <Grid ColumnSpacing="16"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions><NumberBox x:Name="CurrentBox" Header="Página actual" Minimum="1" Maximum="100000" Value="1" SpinButtonPlacementMode="Compact" ValueChanged="SettingChanged"/><NumberBox x:Name="WaitBox" Grid.Column="1" Header="Espera mínima (segundos)" Minimum="0.2" Maximum="120" Value="1.5" SpinButtonPlacementMode="Compact" ValueChanged="SettingChanged"/></Grid>
+       <CheckBox x:Name="StableBox" Content="Esperar imagen estable" IsChecked="True" Checked="SettingChanged" Unchecked="SettingChanged"/>
+       <StackPanel Orientation="Horizontal" Spacing="8"><Button Content="Ir a página" Click="GoToPage"/><Button x:Name="StartButton" Content="Iniciar rango" Click="StartCapture" Style="{StaticResource AccentButtonStyle}" AutomationProperties.AutomationId="StartCapture"/><Button x:Name="SingleButton" Content="Capturar ahora" Click="SingleCapture" AutomationProperties.AutomationId="SingleCapture"/></StackPanel>
+       <TextBlock Text="Mantén el navegador al frente. Ctrl + Shift + C captura; Ctrl + Shift + F12 detiene." TextWrapping="Wrap" Style="{StaticResource CaptionTextBlockStyle}"/>
+      </StackPanel></Border>
+     </StackPanel>
+    </ScrollViewer>
+    <Grid x:Name="GalleryView" Grid.Row="1" Visibility="Collapsed" RowSpacing="16">
+     <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+     <TextBlock Text="Galería" Style="{StaticResource TitleTextBlockStyle}"/>
+     <CommandBar Grid.Row="1" DefaultLabelPosition="Right" HorizontalAlignment="Left" IsOpen="False">
+      <AppBarButton Icon="Add" Label="Importar" Click="ImportPages"/><AppBarButton Icon="Refresh" Label="Repetir" Click="Retake"/><AppBarButton Icon="Delete" Label="Eliminar" Click="DeletePage"/>
+      <AppBarButton Icon="Delete" Label="Eliminar todas" Click="DeleteAllPages"/>
+      <AppBarSeparator/><AppBarButton Label="Subir" Click="MoveUp"><AppBarButton.Icon><FontIcon Glyph="&#xE70E;"/></AppBarButton.Icon></AppBarButton><AppBarButton Label="Bajar" Click="MoveDown"><AppBarButton.Icon><FontIcon Glyph="&#xE70D;"/></AppBarButton.Icon></AppBarButton>
+     </CommandBar>
+     <Grid Grid.Row="2" ColumnSpacing="24"><Grid.ColumnDefinitions><ColumnDefinition Width="280"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+      <ListView x:Name="PagesList" SelectionMode="Single" SelectionChanged="SelectPage" CanReorderItems="True" AllowDrop="True" DragItemsCompleted="Reordered" AutomationProperties.AutomationId="Gallery">
+       <ListView.ItemTemplate><DataTemplate x:DataType="core:CapturePage"><Grid Padding="4" ColumnSpacing="12"><Grid.ColumnDefinitions><ColumnDefinition Width="72"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions><Image Source="{x:Bind ImagePath}" Width="72" Height="88" Stretch="Uniform"/><StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="4"><TextBlock Text="{x:Bind Label, Mode=OneWay}" FontWeight="SemiBold"/><TextBlock Text="{x:Bind Summary, Mode=OneWay}" Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="Wrap"/></StackPanel></Grid></DataTemplate></ListView.ItemTemplate>
+      </ListView>
+      <ScrollViewer Grid.Column="1"><StackPanel Spacing="16"><TextBlock x:Name="PreviewTitle" Text="Selecciona una página" Style="{StaticResource SubtitleTextBlockStyle}"/><Image x:Name="Preview" MaxHeight="500" Stretch="Uniform"/><TextBox x:Name="TextEditor" Header="Texto reconocido · puedes corregirlo" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="160" MaxHeight="500" TextChanged="EditText"/><CheckBox x:Name="KeepImageBox" Content="Conservar imagen en documentos de texto" Checked="KeepImageChanged" Unchecked="KeepImageChanged"/></StackPanel></ScrollViewer>
+     </Grid>
+    </Grid>
+    <ScrollViewer x:Name="OcrView" Grid.Row="1" Visibility="Collapsed"><StackPanel x:Name="OcrControls" Spacing="16" MaxWidth="880">
+     <TextBlock Text="Reconocer texto" Style="{StaticResource TitleTextBlockStyle}"/><TextBlock Text="Procesa tus capturas y revisa el texto en la galería." TextWrapping="Wrap"/>
+     <Border Style="{StaticResource Card}"><StackPanel Spacing="16">
+      <ComboBox x:Name="EngineBox" Header="Motor OCR" SelectedIndex="0" HorizontalAlignment="Stretch" SelectionChanged="SettingChanged"><ComboBoxItem Content="Local · Tesseract incluido" Tag="local"/><ComboBoxItem Content="Windows OCR · si está disponible" Tag="windows"/><ComboBoxItem Content="Ollama · modelo de visión" Tag="ollama"/><ComboBoxItem Content="Tesseract externo" Tag="tesseract"/><ComboBoxItem Content="Surya externo" Tag="surya"/></ComboBox>
+      <ComboBox x:Name="OcrLanguagesBox" Header="Idiomas del OCR local" SelectedIndex="0" HorizontalAlignment="Stretch" SelectionChanged="SettingChanged"><ComboBoxItem Content="Español + inglés" Tag="spa+eng"/><ComboBoxItem Content="Español" Tag="spa"/><ComboBoxItem Content="English" Tag="eng"/><ComboBoxItem Content="简体中文 + English" Tag="chi_sim+eng"/></ComboBox>
+      <TextBlock Text="El OCR local funciona sin conexión. Ollama y los motores externos requieren sus propias instalaciones." TextWrapping="Wrap"/>
+      <StackPanel Orientation="Horizontal" Spacing="8"><Button Content="Reconocer todas" Click="RecognizeAll" Style="{StaticResource AccentButtonStyle}"/><Button Content="Reconocer seleccionada" Click="RecognizeSelected"/></StackPanel>
+     </StackPanel></Border>
+     <Expander Header="Ollama y motores externos" HorizontalAlignment="Stretch"><StackPanel Spacing="16">
+      <TextBox x:Name="EndpointBox" Header="Servidor Ollama" Text="http://localhost:11434" TextChanged="SettingChanged"/><TextBox x:Name="ModelBox" Header="Modelo de visión" Text="glm-ocr" TextChanged="SettingChanged"/>
+      <StackPanel Orientation="Horizontal" Spacing="8"><Button Content="Ver modelos" Click="ListModels"/><Button Content="Descargar modelo" Click="PullModel"/></StackPanel>
+      <TextBox x:Name="PromptBox" Header="Instrucciones para el modelo" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="100" TextChanged="SettingChanged"/>
+      <TextBox x:Name="ToolBox" Header="Ejecutable externo (Tesseract o Surya)" TextChanged="SettingChanged"/><Button Content="Elegir ejecutable" Click="PickTool"/>
+     </StackPanel></Expander>
+    </StackPanel></ScrollViewer>
+    <ScrollViewer x:Name="ExportView" Grid.Row="1" Visibility="Collapsed"><StackPanel x:Name="ExportControls" Spacing="16" MaxWidth="880">
+     <TextBlock Text="Exportar documento" Style="{StaticResource TitleTextBlockStyle}"/><TextBlock x:Name="ExportCount" Text="0 páginas disponibles"/>
+     <Border Style="{StaticResource Card}"><StackPanel Spacing="16">
+      <TextBox x:Name="TitleBox" Header="Título del documento" Text="Capturas" TextChanged="SettingChanged"/>
+      <ComboBox x:Name="OutputBox" SelectionChanged="SettingChanged" Header="Formato" SelectedIndex="0" HorizontalAlignment="Stretch"><ComboBoxItem Content="PDF de imágenes" Tag="pdf"/><ComboBoxItem Content="PDF buscable · imagen y OCR" Tag="searchablePDF"/><ComboBoxItem Content="PDF de texto paginado" Tag="textPDF"/><ComboBoxItem Content="ZIP de imágenes PNG" Tag="zip"/><ComboBoxItem Content="Texto TXT" Tag="txt"/><ComboBoxItem Content="Markdown" Tag="md"/><ComboBoxItem Content="HTML" Tag="html"/><ComboBoxItem Content="EPUB" Tag="epub"/><ComboBoxItem Content="Word DOCX" Tag="docx"/></ComboBox>
+      <CheckBox x:Name="PreserveBox" Content="Conservar imágenes en documentos de texto" Checked="SettingChanged" Unchecked="SettingChanged"/>
+      <TextBlock Text="TXT, Markdown, HTML, EPUB, DOCX y los PDF de texto necesitan OCR. El PDF buscable completa automáticamente las posiciones con OCR local cuando sea necesario." TextWrapping="Wrap"/>
+      <Button Content="Exportar…" Click="ExportDocument" Style="{StaticResource AccentButtonStyle}"/>
+     </StackPanel></Border>
+    </StackPanel></ScrollViewer>
+    <ScrollViewer x:Name="ProjectsView" Grid.Row="1" Visibility="Collapsed"><StackPanel x:Name="ProjectControls" Spacing="16" MaxWidth="880">
+     <TextBlock Text="Proyectos y recuperación" Style="{StaticResource TitleTextBlockStyle}"/>
+     <Border Style="{StaticResource Card}"><StackPanel Spacing="16">
+      <TextBlock Text="Tu sesión se guarda automáticamente después de cada página y cambio." TextWrapping="Wrap"/>
+      <StackPanel Orientation="Horizontal" Spacing="8"><Button Content="Guardar proyecto…" Click="SaveProject" Style="{StaticResource AccentButtonStyle}"/><Button Content="Abrir proyecto…" Click="OpenProject"/><Button Content="Nuevo proyecto" Click="NewProject"/></StackPanel>
+      <Button Content="Abrir recuperaciones" Click="OpenRecovery"/>
+      <TextBlock Text="Los proyectos .ustproject incluyen imágenes, orden y texto. Al abrir o crear otro se conserva una recuperación. Vuelve a seleccionar campo y área al cambiar de sesión." TextWrapping="Wrap"/>
+     </StackPanel></Border>
+
+    </StackPanel></ScrollViewer>
+    <ScrollViewer x:Name="HelpView" Grid.Row="1" Visibility="Collapsed"><StackPanel Spacing="16" MaxWidth="880">
+     <ComboBox x:Name="LanguageBox" Header="Idioma de la interfaz" HorizontalAlignment="Stretch" SelectedIndex="0" SelectionChanged="ChangeLanguage"><ComboBoxItem Content="Idioma del sistema" Tag="system"/><ComboBoxItem Content="Español" Tag="es"/><ComboBoxItem Content="English" Tag="en"/><ComboBoxItem Content="简体中文" Tag="zh"/></ComboBox>
+     <TextBlock Text="Empieza con tres páginas" Style="{StaticResource TitleTextBlockStyle}"/>
+     <Border Style="{StaticResource Card}"><StackPanel Spacing="16">
+      <TextBlock Text="1. Abre el lector de prueba o tu sitio e inicia sesión normalmente.&#10;2. Selecciona el campo de página y el área visible.&#10;3. Prueba Ir a página; luego captura de la 1 a la 3.&#10;4. Revisa la galería, reconoce texto y exporta." TextWrapping="Wrap"/>
+      <StackPanel Orientation="Horizontal" Spacing="8"><Button Content="Lector de prueba" Click="OpenFixture"/><Button Content="Lector con iframe" Click="OpenIframeFixture"/></StackPanel>
+      <TextBlock Text="Ctrl + Shift + C: capturar. Ctrl + Shift + F12: detener. Esc: cancelar selección. Las capturas corresponden al área visible en píxeles físicos. Selecciona otra vez después de mover el navegador, cambiar zoom o pantallas. La sesión de Windows debe estar desbloqueada; el navegador debe permanecer al frente." TextWrapping="Wrap"/>
+      <TextBlock Text="Los campos deben aceptar un número y Enter. Los lectores protegidos, canvas personalizados o sitios que bloquean entrada pueden impedir la automatización. No se eluden protecciones de contenido." TextWrapping="Wrap"/>
+     </StackPanel></Border>
+     <Border x:Name="BrowserSetupCard" Style="{StaticResource Card}"><StackPanel Spacing="12">
+      <TextBlock Text="Instalar la extensión del navegador" Style="{StaticResource SubtitleTextBlockStyle}"/>
+      <TextBlock x:Name="DefaultBrowserText" TextWrapping="Wrap"/>
+      <ComboBox x:Name="BrowserBox" Header="Navegador" HorizontalAlignment="Stretch" SelectionChanged="BrowserSelected" AutomationProperties.AutomationId="BrowserSelector">
+       <ComboBox.ItemTemplate><DataTemplate><StackPanel Orientation="Horizontal" Spacing="10"><Image Source="{Binding Icon}" Width="24" Height="24"/><TextBlock Text="{Binding Label}" VerticalAlignment="Center"/></StackPanel></DataTemplate></ComboBox.ItemTemplate>
+      </ComboBox>
+      <TextBlock x:Name="BrowserPathText" TextWrapping="Wrap" Style="{StaticResource CaptionTextBlockStyle}" IsTextSelectionEnabled="True"/>
+      <StackPanel Orientation="Horizontal" Spacing="8"><Button x:Name="InstallBrowserButton" Content="Instalar extensión" Click="InstallBrowserExtension" Style="{StaticResource AccentButtonStyle}" IsEnabled="False" AutomationProperties.AutomationId="InstallBrowserExtension"/><Button x:Name="BrowseBrowserButton" Content="Buscar otro navegador…" Click="BrowseBrowser"/><Button x:Name="RefreshBrowserButton" Content="Actualizar lista" Click="RefreshBrowsers"/></StackPanel>
+      <TextBlock x:Name="BrowserInstructions" TextWrapping="Wrap"/>
+      <StackPanel Orientation="Horizontal" Spacing="8"><Button Content="Abrir carpeta del complemento" Click="OpenExtension"/><Button Content="Copiar ruta de la extensión" Click="CopyExtensionPath"/><Button Content="Comprobar conexión" Click="CheckBridge"/></StackPanel>
+      <TextBlock x:Name="BridgeStatus" TextWrapping="Wrap" AutomationProperties.LiveSetting="Polite"/>
+      <TextBlock Text="Después de cargar la extensión, abre tu lector y pulsa el icono del complemento. La conexión es automática, sin dirección ni clave. Puedes cerrar el popup." TextWrapping="Wrap"/>
+     </StackPanel></Border>
+     <Button Content="Abrir guía" Click="OpenGuide"/>
+    </StackPanel></ScrollViewer>
+   </Grid>
+  </NavigationView>
+  <Border Grid.Row="2" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="0,1,0,0" Padding="24,12">
+   <Grid ColumnSpacing="16"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="180"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions><TextBlock x:Name="StatusText" Text="Listo para capturar" VerticalAlignment="Center" TextWrapping="Wrap" AutomationProperties.LiveSetting="Polite"/><StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8"><Button x:Name="BeginNextDocumentButton" Content="Limpiar datos" Click="BeginNextDocument" AutomationProperties.AutomationId="BeginNextDocument"/><Button x:Name="OpenExportFolderButton" Content="Abrir carpeta" Click="OpenExportFolder" Visibility="Collapsed" AutomationProperties.AutomationId="OpenExportFolder"/></StackPanel><ProgressBar x:Name="Progress" Grid.Column="2" Value="0" VerticalAlignment="Center"/><Button x:Name="StopButton" Grid.Column="3" Content="Detener" Click="Stop" IsEnabled="False" AutomationProperties.AutomationId="Stop"/></Grid>
+  </Border>
+ </Grid>
+</Window>
+
+
+

@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/UniversalCapture.Core/UniversalCapture.Core.csproj" />
+    <Project Path="src/UniversalCapture/UniversalCapture.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/UniversalCapture.Tests/UniversalCapture.Tests.csproj" />
+  </Folder>
+</Solution>

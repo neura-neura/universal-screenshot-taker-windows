@@ -1,0 +1,1134 @@
+{
+  "Usa el navegador seleccionado en Ayuda con tu sesión actual.": [
+    "Uses the browser selected in Help with your existing session.",
+    "使用在帮助中选择的浏览器和您现有的登录状态。"
+  ],
+  "Instalar la extensión del navegador": [
+    "Install the browser extension",
+    "安装浏览器扩展"
+  ],
+  "Navegador": [
+    "Browser",
+    "浏览器"
+  ],
+  "Predeterminado": [
+    "Default",
+    "默认"
+  ],
+  "Predeterminado de Windows: {0}": [
+    "Windows default: {0}",
+    "Windows 默认浏览器：{0}"
+  ],
+  "No identificado": [
+    "Not identified",
+    "未识别"
+  ],
+  "Instalar extensión": [
+    "Install extension",
+    "安装扩展"
+  ],
+  "Buscar otro navegador…": [
+    "Find another browser…",
+    "查找其他浏览器…"
+  ],
+  "Actualizar lista": [
+    "Refresh list",
+    "刷新列表"
+  ],
+  "Copiar ruta de la extensión": [
+    "Copy extension path",
+    "复制扩展路径"
+  ],
+  "Ruta de la extensión copiada.": [
+    "Extension path copied.",
+    "已复制扩展路径。"
+  ],
+  "El navegador seleccionado ya no está disponible.": [
+    "The selected browser is no longer available.",
+    "所选浏览器已不可用。"
+  ],
+  "Dirección del navegador no válida.": [
+    "Invalid browser address.",
+    "浏览器地址无效。"
+  ],
+  "No se encontraron navegadores. Usa Buscar otro navegador para seleccionar su archivo .exe.": [
+    "No browsers found. Use Find another browser to select its .exe file.",
+    "未找到浏览器。使用查找其他浏览器选择其 .exe 文件。"
+  ],
+  "Este navegador no se reconoce como Chromium o Firefox. Selecciona el ejecutable principal de un navegador compatible.": [
+    "This browser is not recognized as Chromium or Firefox. Select the main executable of a compatible browser.",
+    "无法将此浏览器识别为 Chromium 或 Firefox。请选择兼容浏览器的主程序文件。"
+  ],
+  "Instalación temporal en Firefox: pulsa Instalar extensión, elige Cargar complemento temporal y selecciona manifest.json en la carpeta indicada. Firefox lo elimina al reiniciar; una instalación permanente requiere un paquete firmado.": [
+    "Temporary Firefox installation: click Install extension, choose Load Temporary Add-on and select manifest.json in the indicated folder. Firefox removes it on restart; permanent installation requires a signed package.",
+    "Firefox 临时安装：点击安装扩展，选择临时载入附加组件，然后在所示文件夹中选择 manifest.json。Firefox 重启后会移除该扩展；永久安装需要已签名的扩展包。"
+  ],
+  "Instalación asistida: pulsa Instalar extensión, activa Modo desarrollador y elige Cargar descomprimida. Pega la ruta de la extensión para seleccionar su carpeta. El navegador requiere que confirmes estos pasos.": [
+    "Assisted installation: click Install extension, enable Developer mode and choose Load unpacked. Paste the extension path to select its folder. The browser requires you to confirm these steps.",
+    "辅助安装：点击安装扩展，启用开发者模式并选择加载已解压的扩展程序。粘贴扩展路径以选择其文件夹。浏览器要求您确认这些步骤。"
+  ],
+  "Completa la instalación en el navegador y luego pulsa el icono de la extensión desde tu lector.": [
+    "Complete installation in the browser, then click the extension icon from your reader.",
+    "在浏览器中完成安装，然后在阅读器页面点击扩展图标。"
+  ],
+  "Lector conectado. La extensión está lista para seleccionar y capturar.": [
+    "Reader connected. The extension is ready to select and capture.",
+    "阅读器已连接。扩展已准备好进行选择和截图。"
+  ],
+  "Lector no conectado. Carga la extensión y pulsa su icono desde la pestaña del lector.": [
+    "Reader disconnected. Load the extension and click its icon from the reader tab.",
+    "阅读器未连接。请加载扩展并在阅读器标签页点击其图标。"
+  ],
+  "Después de cargar la extensión, abre tu lector y pulsa el icono del complemento. La conexión es automática, sin dirección ni clave. Puedes cerrar el popup.": [
+    "After loading the extension, open your reader and click the extension icon. Connection is automatic, with no address or key. You can close the popup.",
+    "加载扩展后，打开阅读器并点击扩展图标。连接自动建立，无需地址或密钥。您可以关闭弹出窗口。"
+  ],
+  "Abrir carpeta": [
+    "Open folder",
+    "打开文件夹"
+  ],
+  "Capturar": [
+    "Capture",
+    "捕获"
+  ],
+  "Galería": [
+    "Gallery",
+    "图库"
+  ],
+  "Reconocer texto": [
+    "Recognize text",
+    "识别文字"
+  ],
+  "Exportar": [
+    "Export",
+    "导出"
+  ],
+  "Proyectos": [
+    "Projects",
+    "项目"
+  ],
+  "Ayuda": [
+    "Help",
+    "帮助"
+  ],
+  "Captura de páginas": [
+    "Page capture",
+    "页面捕获"
+  ],
+  "1. Abre el lector": [
+    "1. Open your reader",
+    "1. 打开阅读器"
+  ],
+  "Dirección del sitio": [
+    "Website address",
+    "网站地址"
+  ],
+  "Abrir navegador": [
+    "Open browser",
+    "打开浏览器"
+  ],
+  "Lector de prueba": [
+    "Test reader",
+    "测试阅读器"
+  ],
+  "2. Elige campo y área": [
+    "2. Choose field and area",
+    "2. 选择页码字段和区域"
+  ],
+  "Seleccionar campo": [
+    "Select page field",
+    "选择页码字段"
+  ],
+  "Seleccionar área": [
+    "Select capture area",
+    "选择捕获区域"
+  ],
+  "Dos esquinas": [
+    "Two corners",
+    "两个角点"
+  ],
+  "Mostrar contorno": [
+    "Show outline",
+    "显示边框"
+  ],
+  "Localizadores web opcionales": [
+    "Optional web locators",
+    "可选网页定位"
+  ],
+  "Método del campo": [
+    "Page field method",
+    "页码字段方式"
+  ],
+  "Inspector de componentes": [
+    "Component inspector",
+    "视觉选择"
+  ],
+  "Selector CSS": [
+    "CSS selector",
+    "CSS 选择器"
+  ],
+  "Fragmento HTML": [
+    "HTML snippet",
+    "HTML 片段"
+  ],
+  "Campo enfocado": [
+    "Focused field",
+    "当前焦点字段"
+  ],
+  "Selector o fragmento HTML": [
+    "Selector or HTML snippet",
+    "选择器或 HTML 片段"
+  ],
+  "Localizar campo web": [
+    "Locate web field",
+    "定位网页字段"
+  ],
+  "Área de elemento web": [
+    "Web element area",
+    "网页元素区域"
+  ],
+  "3. Configura y captura": [
+    "3. Configure and capture",
+    "3. 配置并捕获"
+  ],
+  "Modo de captura": [
+    "Capture mode",
+    "捕获模式"
+  ],
+  "Automático · rango de páginas": [
+    "Automatic · page range",
+    "自动 · 页码范围"
+  ],
+  "Semiautomático · capturar y avanzar": [
+    "Semi-automatic · capture and next",
+    "半自动 · 捕获并翻页"
+  ],
+  "Manual · capturar vista actual": [
+    "Manual · capture current view",
+    "手动 · 捕获当前视图"
+  ],
+  "Primera página": [
+    "First page",
+    "起始页"
+  ],
+  "Última página": [
+    "Last page",
+    "结束页"
+  ],
+  "Página actual": [
+    "Current page",
+    "当前页"
+  ],
+  "Espera mínima (segundos)": [
+    "Minimum wait (seconds)",
+    "最短等待（秒）"
+  ],
+  "Esperar imagen estable": [
+    "Wait for stable image",
+    "等待图像稳定"
+  ],
+  "Ir a página": [
+    "Go to page",
+    "跳转页码"
+  ],
+  "Iniciar rango": [
+    "Start page range",
+    "开始范围捕获"
+  ],
+  "Capturar ahora": [
+    "Capture now",
+    "立即捕获"
+  ],
+  "Importar": [
+    "Import",
+    "导入"
+  ],
+  "Repetir": [
+    "Retake",
+    "重新捕获"
+  ],
+  "Eliminar": [
+    "Delete",
+    "删除"
+  ],
+  "Subir": [
+    "Move up",
+    "上移"
+  ],
+  "Bajar": [
+    "Move down",
+    "下移"
+  ],
+  "Selecciona una página": [
+    "Select a page",
+    "选择页面"
+  ],
+  "Texto reconocido · puedes corregirlo": [
+    "Recognized text · editable",
+    "识别文本 · 可编辑"
+  ],
+  "Conservar imagen en documentos de texto": [
+    "Keep page image in text documents",
+    "在文本文档中保留页面图像"
+  ],
+  "Motor OCR": [
+    "OCR engine",
+    "OCR 引擎"
+  ],
+  "Local · Tesseract incluido": [
+    "Local · bundled Tesseract",
+    "本地 · 内置 Tesseract"
+  ],
+  "Windows OCR · si está disponible": [
+    "Windows OCR · when available",
+    "Windows OCR · 可用时"
+  ],
+  "Ollama · modelo de visión": [
+    "Ollama · vision model",
+    "Ollama · 视觉模型"
+  ],
+  "Tesseract externo": [
+    "External Tesseract",
+    "外部 Tesseract"
+  ],
+  "Surya externo": [
+    "External Surya",
+    "外部 Surya"
+  ],
+  "Idiomas del OCR local": [
+    "Local OCR languages",
+    "本地 OCR 语言"
+  ],
+  "Español + inglés": [
+    "Spanish + English",
+    "西班牙语 + 英语"
+  ],
+  "Reconocer todas": [
+    "Recognize all",
+    "识别全部"
+  ],
+  "Reconocer seleccionada": [
+    "Recognize selected",
+    "识别所选"
+  ],
+  "Ollama y motores externos": [
+    "Ollama and external engines",
+    "Ollama 与外部引擎"
+  ],
+  "Servidor Ollama": [
+    "Ollama server",
+    "Ollama 服务器"
+  ],
+  "Modelo de visión": [
+    "Vision model",
+    "视觉模型"
+  ],
+  "Ver modelos": [
+    "List models",
+    "列出模型"
+  ],
+  "Descargar modelo": [
+    "Download model",
+    "下载模型"
+  ],
+  "Instrucciones para el modelo": [
+    "Model instructions",
+    "模型指令"
+  ],
+  "Ejecutable externo (Tesseract o Surya)": [
+    "External executable (Tesseract or Surya)",
+    "外部程序（Tesseract 或 Surya）"
+  ],
+  "Elegir ejecutable": [
+    "Choose executable",
+    "选择程序"
+  ],
+  "Exportar documento": [
+    "Export document",
+    "导出文档"
+  ],
+  "Título del documento": [
+    "Document title",
+    "文档标题"
+  ],
+  "Formato": [
+    "Format",
+    "格式"
+  ],
+  "PDF de imágenes": [
+    "Image PDF",
+    "图像 PDF"
+  ],
+  "PDF buscable · imagen y OCR": [
+    "Searchable PDF · image and OCR",
+    "可搜索 PDF · 图像与 OCR"
+  ],
+  "PDF de texto paginado": [
+    "Paginated text PDF",
+    "分页文本 PDF"
+  ],
+  "ZIP de imágenes PNG": [
+    "ZIP of PNG images",
+    "PNG 图像 ZIP"
+  ],
+  "Texto TXT": [
+    "Plain text TXT",
+    "纯文本 TXT"
+  ],
+  "Conservar imágenes en documentos de texto": [
+    "Keep images in text documents",
+    "在文本文档中保留图像"
+  ],
+  "Exportar…": [
+    "Export…",
+    "导出…"
+  ],
+  "Proyectos y recuperación": [
+    "Projects and recovery",
+    "项目与恢复"
+  ],
+  "Guardar proyecto…": [
+    "Save project…",
+    "保存项目…"
+  ],
+  "Abrir proyecto…": [
+    "Open project…",
+    "打开项目…"
+  ],
+  "Nuevo proyecto": [
+    "New project",
+    "新建项目"
+  ],
+  "Abrir recuperaciones": [
+    "Open recovery folder",
+    "打开恢复文件夹"
+  ],
+  "Idioma de la interfaz": [
+    "Interface language",
+    "界面语言"
+  ],
+  "Empieza con tres páginas": [
+    "Start with three pages",
+    "从三页开始"
+  ],
+  "Complemento opcional para selectores": [
+    "Optional selector extension",
+    "可选选择器扩展"
+  ],
+  "Dirección local": [
+    "Local address",
+    "本地地址"
+  ],
+  "Clave de conexión (cambia al reiniciar)": [
+    "Connection key (changes on restart)",
+    "连接密钥（重启后更改）"
+  ],
+  "Abrir carpeta del complemento": [
+    "Open extension folder",
+    "打开扩展文件夹"
+  ],
+  "Comprobar conexión": [
+    "Check connection",
+    "检查连接"
+  ],
+  "Abrir guía": [
+    "Open guide",
+    "打开指南"
+  ],
+  "Detener": [
+    "Stop",
+    "停止"
+  ],
+  "Abre tu lector, elige el campo de página y encuadra el contenido.": [
+    "Open your reader, select the page field and frame the content.",
+    "打开阅读器，选择页码字段并框选内容。"
+  ],
+  "Se utiliza el navegador predeterminado con tu sesión actual.": [
+    "Uses your default browser with your existing session.",
+    "使用默认浏览器和现有会话。"
+  ],
+  "Procesa tus capturas y revisa el texto en la galería.": [
+    "Process captures and review their text in the gallery.",
+    "处理截图并在图库中检查文本。"
+  ],
+  "Tu sesión se guarda automáticamente después de cada página y cambio.": [
+    "Your session is saved automatically after every page and change.",
+    "每页和每次更改后自动保存会话。"
+  ],
+  "El OCR local funciona sin conexión. Ollama y los motores externos requieren sus propias instalaciones.": [
+    "Local OCR works offline. Ollama and external engines require their own installations.",
+    "本地 OCR 可离线运行。Ollama 和外部引擎需自行安装。"
+  ],
+  "Idioma del sistema": [
+    "System language",
+    "系统语言"
+  ],
+  "Español": [
+    "Spanish",
+    "西班牙语"
+  ],
+  "English": [
+    "English",
+    "英语"
+  ],
+  "简体中文": [
+    "Simplified Chinese",
+    "简体中文"
+  ],
+  "简体中文 + English": [
+    "Simplified Chinese + English",
+    "简体中文 + 英语"
+  ],
+  "Dentro del navegador (DOM)": [
+    "Inside the browser (DOM)",
+    "浏览器内部（DOM）"
+  ],
+  "Accesibilidad de Windows (compatibilidad)": [
+    "Windows accessibility (compatibility)",
+    "Windows 辅助功能（兼容模式）"
+  ],
+  "Conexión y método de selección": [
+    "Connection and selection method",
+    "连接与选择方式"
+  ],
+  "Conecta el complemento incluido desde Ayuda. El modo DOM selecciona y captura dentro de la pestaña, sin mover el mouse ni cubrir los monitores.": [
+    "Connect the included extension from Help. DOM mode selects and captures inside the tab without moving the mouse or covering your monitors.",
+    "通过帮助页面连接随附的扩展程序。DOM 模式在标签页内部选择和截图，不移动鼠标，也不覆盖显示器。"
+  ],
+  "Mantén el navegador al frente. Ctrl + Shift + C captura; Ctrl + Shift + F12 detiene.": [
+    "Keep the browser in front. Ctrl + Shift + C captures; Ctrl + Shift + F12 stops.",
+    "保持浏览器在前台。Ctrl + Shift + C 截图；Ctrl + Shift + F12 停止。"
+  ],
+  "Eliminar todas": [
+    "Delete all",
+    "全部删除"
+  ],
+  "Cancelar": [
+    "Cancel",
+    "取消"
+  ],
+  "Eliminar todas las páginas": [
+    "Delete all pages",
+    "删除所有页面"
+  ],
+  "Se eliminarán las {0} páginas de esta galería. Se guardará una copia recuperable del proyecto.": [
+    "All {0} pages in this gallery will be deleted. A recoverable project copy will be saved.",
+    "将删除此图库中的全部 {0} 页。系统会保存可恢复的项目副本。"
+  ],
+  "TXT, Markdown, HTML, EPUB, DOCX y los PDF de texto necesitan OCR. El PDF buscable completa automáticamente las posiciones con OCR local cuando sea necesario.": [
+    "TXT, Markdown, HTML, EPUB, DOCX and text PDFs need OCR. Searchable PDFs automatically obtain text positions with local OCR when needed.",
+    "TXT、Markdown、HTML、EPUB、DOCX 和文本 PDF 需要 OCR。可搜索 PDF 会在需要时自动使用本地 OCR 获取文字位置。"
+  ],
+  "Los proyectos .ustproject incluyen imágenes, orden y texto. Al abrir o crear otro se conserva una recuperación. Vuelve a seleccionar campo y área al cambiar de sesión.": [
+    ".ustproject projects include images, order and text. Opening or creating another project keeps a recovery copy. Select the field and area again when changing sessions.",
+    ".ustproject 项目包含图像、顺序和文本。打开或创建其他项目时会保留恢复副本。切换会话后请重新选择输入框和区域。"
+  ],
+  "Lector con iframe": [
+    "Reader with iframe",
+    "含 iframe 的阅读器"
+  ],
+  "Conectar el navegador": [
+    "Connect the browser",
+    "连接浏览器"
+  ],
+  "Carga el complemento incluido en Thorium, Edge o Chrome. Desde la pestaña del lector, pulsa su icono. La conexión es automática: no necesitas dirección ni clave. Puedes cerrar el popup; la conexión sigue activa en segundo plano.": [
+    "Load the included extension in Thorium, Edge or Chrome. Click its icon from the reader tab. Connection is automatic: no address or key is needed. You can close the popup; the connection remains active in the background.",
+    "在 Thorium、Edge 或 Chrome 中加载随附的扩展程序。在阅读器标签页中点击扩展图标。连接会自动建立，无需地址或密钥。关闭弹出窗口后，连接仍会在后台保持。"
+  ],
+  "Ctrl + Shift + C: capturar. Ctrl + Shift + F12: detener. Esc: cancelar selección. Las capturas corresponden al área visible en píxeles físicos. Selecciona otra vez después de mover el navegador, cambiar zoom o pantallas. La sesión de Windows debe estar desbloqueada; el navegador debe permanecer al frente.": [
+    "Ctrl + Shift + C: capture. Ctrl + Shift + F12: stop. Esc: cancel selection. Captures cover the visible area in physical pixels. Select again after moving the browser or changing zoom or screens. Windows must be unlocked and the browser must remain in front.",
+    "Ctrl + Shift + C：截图。Ctrl + Shift + F12：停止。Esc：取消选择。截图包含可见区域，以物理像素保存。移动浏览器、更改缩放或显示器后请重新选择。Windows 必须处于解锁状态，浏览器必须保持在前台。"
+  ],
+  "Los campos deben aceptar un número y Enter. Los lectores protegidos, canvas personalizados o sitios que bloquean entrada pueden impedir la automatización. No se eluden protecciones de contenido.": [
+    "Fields must accept a number and Enter. Protected readers, custom canvases or sites that block input may prevent automation. Content protections are not bypassed.",
+    "输入框必须接受数字和回车。受保护的阅读器、自定义画布或阻止输入的网站可能无法自动化。本程序不会绕过内容保护。"
+  ],
+  "Listo para capturar": [
+    "Ready to capture",
+    "准备截图"
+  ],
+  "Campo y área pendientes": [
+    "Field and area not selected",
+    "尚未选择输入框和区域"
+  ],
+  "Campo: {0}   ·   Área: {1}": [
+    "Field: {0}   ·   Area: {1}",
+    "输入框：{0}   ·   区域：{1}"
+  ],
+  "pendiente": [
+    "not selected",
+    "未选择"
+  ],
+  "Campo editable": [
+    "Editable field",
+    "可编辑输入框"
+  ],
+  "{0} · componente seleccionado": [
+    "{0} · selected component",
+    "{0} · 已选择的组件"
+  ],
+  "elemento seleccionado en el navegador": [
+    "element selected in the browser",
+    "已在浏览器中选择元素"
+  ],
+  "selecciona con el inspector": [
+    "select with the inspector",
+    "请使用检查器选择"
+  ],
+  "px de la página": [
+    "page pixels",
+    "页面像素"
+  ],
+  "{0:N0} páginas disponibles": [
+    "{0:N0} pages available",
+    "可用页面：{0:N0}"
+  ],
+  "Página {0}": [
+    "Page {0}",
+    "第 {0} 页"
+  ],
+  "Página importada": [
+    "Imported page",
+    "导入的页面"
+  ],
+  "Sin texto reconocido": [
+    "No recognized text",
+    "无识别文本"
+  ],
+  "{0:N0} caracteres": [
+    "{0:N0} characters",
+    "{0:N0} 个字符"
+  ],
+  "Listo · {0:N0} páginas guardadas": [
+    "Done · {0:N0} pages saved",
+    "完成 · 已保存 {0:N0} 页"
+  ],
+  "Reconociendo {0} de {1}": [
+    "Recognizing {0} of {1}",
+    "正在识别 {0}/{1}"
+  ],
+  "Capturando página {0} · {1} de {2}": [
+    "Capturing page {0} · {1} of {2}",
+    "正在截取第 {0} 页 · {1}/{2}"
+  ],
+  "Capturando página {0}": [
+    "Capturing page {0}",
+    "正在截取第 {0} 页"
+  ],
+  "Preparando PDF buscable {0} de {1}": [
+    "Preparing searchable PDF {0} of {1}",
+    "正在准备可搜索 PDF {0}/{1}"
+  ],
+  "Deteniendo la operación. Cierra la aplicación cuando termine.": [
+    "Stopping the operation. Close the app when it finishes.",
+    "正在停止操作。完成后请关闭应用。"
+  ],
+  "No se pudo recuperar la sesión: ": [
+    "Could not recover the session: ",
+    "无法恢复会话："
+  ],
+  ". Las imágenes siguen en la carpeta Current.": [
+    ". Images are still in the Current folder.",
+    "。图像仍保存在 Current 文件夹中。"
+  ],
+  "Un atajo global ya está en uso. Puedes capturar y detener desde los botones.": [
+    "A global shortcut is already in use. You can capture and stop using the buttons.",
+    "全局快捷键已被占用。请使用按钮截图和停止。"
+  ],
+  "La operación no se completó": [
+    "The operation did not complete",
+    "操作未完成"
+  ],
+  "Detenido · las páginas capturadas se conservaron": [
+    "Stopped · captured pages were kept",
+    "已停止 · 已保留截取的页面"
+  ],
+  "Error al guardar: ": [
+    "Error saving: ",
+    "保存出错："
+  ],
+  "Elige el campo en el navegador": [
+    "Choose the field in the browser",
+    "请在浏览器中选择输入框"
+  ],
+  "Encuadra la página del navegador": [
+    "Frame the browser page",
+    "框选浏览器页面"
+  ],
+  "Abre el complemento en la pestaña del lector. Se conectará automáticamente; puedes minimizar su panel.": [
+    "Open the extension on the reader tab. It will connect automatically.",
+    "在阅读器标签页中打开扩展程序。它会自动连接。"
+  ],
+  "Selección guardada en el navegador": [
+    "Selection saved in the browser",
+    "已在浏览器中保存选择"
+  ],
+  "Selección guardada": [
+    "Selection saved",
+    "已保存选择"
+  ],
+  "Selección cancelada": [
+    "Selection canceled",
+    "已取消选择"
+  ],
+  "Página solicitada": [
+    "Page requested",
+    "已请求页面"
+  ],
+  "Importando ": [
+    "Importing ",
+    "正在导入 "
+  ],
+  "Selecciona una página en la galería.": [
+    "Select a page in the gallery.",
+    "请在图库中选择一页。"
+  ],
+  "Importa o captura páginas primero.": [
+    "Import or capture pages first.",
+    "请先导入或截取页面。"
+  ],
+  "Descargando modelo de Ollama…": [
+    "Downloading Ollama model…",
+    "正在下载 Ollama 模型…"
+  ],
+  "Modelo descargado.": [
+    "Model downloaded.",
+    "模型已下载。"
+  ],
+  "Exportando documento…": [
+    "Exporting document…",
+    "正在导出文档…"
+  ],
+  "Documento exportado: ": [
+    "Document exported: ",
+    "文档已导出："
+  ],
+  "Proyecto guardado: ": [
+    "Project saved: ",
+    "项目已保存："
+  ],
+  "Proyecto abierto. Selecciona campo y área otra vez.": [
+    "Project opened. Select the field and area again.",
+    "项目已打开。请重新选择输入框和区域。"
+  ],
+  "Navegador conectado. Puedes seleccionar el campo y el área.": [
+    "Browser connected. You can select the field and area.",
+    "浏览器已连接。可以选择输入框和区域。"
+  ],
+  "Navegador desconectado. Abre el complemento en la pestaña del lector; se conectará automáticamente.": [
+    "Browser disconnected. Open the extension on the reader tab; it will connect automatically.",
+    "浏览器未连接。请在阅读器标签页中打开扩展程序，它会自动连接。"
+  ],
+  "Elige CSS, HTML, campo enfocado o eLibro para localizar un elemento web.": [
+    "Choose CSS, HTML, focused field or eLibro to locate a web element.",
+    "请选择 CSS、HTML、已聚焦输入框或 eLibro 来定位网页元素。"
+  ],
+  "Sin conectar": [
+    "Disconnected",
+    "未连接"
+  ],
+  "Conectado": [
+    "Connected",
+    "已连接"
+  ],
+  "No se pudo iniciar la conexión local del navegador.": [
+    "Could not start the local browser connection.",
+    "无法启动本地浏览器连接。"
+  ],
+  "El complemento no respondió. Abre Ayuda, conecta la pestaña del lector y vuelve a intentarlo.": [
+    "The extension did not respond. Open Help, connect the reader tab and try again.",
+    "扩展程序未响应。请打开帮助，连接阅读器标签页后重试。"
+  ],
+  "Selecciona otra vez el campo con el inspector; el punto guardado no identifica un componente.": [
+    "Select the field again with the inspector; the saved point does not identify a component.",
+    "请使用检查器重新选择输入框；保存的点无法识别组件。"
+  ],
+  "El componente seleccionado desapareció o ya no es único. Selecciona de nuevo el campo.": [
+    "The selected component disappeared or is no longer unique. Select the field again.",
+    "所选组件已消失或不再唯一。请重新选择输入框。"
+  ],
+  "El campo ya no está visible.": [
+    "The field is no longer visible.",
+    "输入框已不可见。"
+  ],
+  "El navegador no aceptó el número de página solicitado.": [
+    "The browser did not accept the requested page number.",
+    "浏览器未接受请求的页码。"
+  ],
+  "El navegador no permitió enfocar el componente seleccionado. No se enviaron teclas.": [
+    "The browser did not allow focusing the selected component. No keys were sent.",
+    "浏览器不允许聚焦所选组件。未发送按键。"
+  ],
+  "Escribe una dirección HTTP o HTTPS válida.": [
+    "Enter a valid HTTP or HTTPS address.",
+    "请输入有效的 HTTP 或 HTTPS 地址。"
+  ],
+  "Selecciona un punto dentro del navegador.": [
+    "Select a point inside the browser.",
+    "请在浏览器内部选择一个点。"
+  ],
+  "Elegiste el escritorio. Selecciona el campo o un área dentro del navegador.": [
+    "You selected the desktop. Select the field or an area inside the browser.",
+    "您选择了桌面。请在浏览器内部选择输入框或区域。"
+  ],
+  "El área de captura no es válida.": [
+    "The capture area is invalid.",
+    "截图区域无效。"
+  ],
+  "El área quedó fuera de las pantallas. Selecciónala otra vez.": [
+    "The area is outside the screens. Select it again.",
+    "区域超出显示器范围。请重新选择。"
+  ],
+  "Selecciona el área de captura.": [
+    "Select the capture area.",
+    "请选择截图区域。"
+  ],
+  "El navegador no devolvió la captura.": [
+    "The browser did not return the screenshot.",
+    "浏览器未返回截图。"
+  ],
+  "Formato de captura no válido.": [
+    "Invalid screenshot format.",
+    "截图格式无效。"
+  ],
+  "La página sigue cambiando. Aumenta la espera o desactiva «Esperar imagen estable» si tiene animaciones.": [
+    "The page keeps changing. Increase the wait or disable “Wait for stable image” if it contains animations.",
+    "页面仍在变化。如有动画，请增加等待时间或关闭“等待图像稳定”。"
+  ],
+  "No hay páginas para exportar.": [
+    "There are no pages to export.",
+    "没有可导出的页面。"
+  ],
+  "Formato desconocido.": [
+    "Unknown format.",
+    "未知格式。"
+  ],
+  "Reconoce o escribe el texto de todas las páginas antes de exportar este formato.": [
+    "Recognize or enter text for every page before exporting this format.",
+    "导出此格式前，请识别或输入所有页面的文本。"
+  ],
+  "Windows bloqueó la entrada. Abre el navegador sin privilegios de administrador.": [
+    "Windows blocked input. Open the browser without administrator privileges.",
+    "Windows 阻止了输入。请使用非管理员权限打开浏览器。"
+  ],
+  "Suelta las teclas modificadoras antes de automatizar el lector.": [
+    "Release modifier keys before automating the reader.",
+    "自动化阅读器前请松开修饰键。"
+  ],
+  "La ventana ya no está disponible.": [
+    "The window is no longer available.",
+    "窗口已不可用。"
+  ],
+  "Selecciona de nuevo el campo: la ventana del navegador se cerró.": [
+    "Select the field again: the browser window was closed.",
+    "请重新选择输入框：浏览器窗口已关闭。"
+  ],
+  "La ventana cambió. Selecciona otra vez el campo y el área.": [
+    "The window changed. Select the field and area again.",
+    "窗口已改变。请重新选择输入框和区域。"
+  ],
+  "El navegador se movió o cambió de tamaño. Selecciona otra vez el campo y el área.": [
+    "The browser moved or resized. Select the field and area again.",
+    "浏览器已移动或调整大小。请重新选择输入框和区域。"
+  ],
+  "El navegador perdió el foco. Se detuvo la captura para evitar enviar teclas a otra aplicación.": [
+    "The browser lost focus. Capture stopped to avoid sending keys to another app.",
+    "浏览器失去焦点。已停止截图，以免将按键发送给其他应用。"
+  ],
+  "Selecciona el campo de página.": [
+    "Select the page field.",
+    "请选择页码输入框。"
+  ],
+  "El área debe estar dentro de la ventana seleccionada.": [
+    "The area must be inside the selected window.",
+    "区域必须位于所选窗口内。"
+  ],
+  "Selecciona primero el campo o el área del navegador.": [
+    "Select the browser field or area first.",
+    "请先选择浏览器输入框或区域。"
+  ],
+  "Dirección de Ollama no válida.": [
+    "Invalid Ollama address.",
+    "Ollama 地址无效。"
+  ],
+  "Windows OCR no está disponible. Usa el OCR local incluido.": [
+    "Windows OCR is unavailable. Use the included local OCR.",
+    "Windows OCR 不可用。请使用随附的本地 OCR。"
+  ],
+  "Surya no generó results.json.": [
+    "Surya did not create results.json.",
+    "Surya 未生成 results.json。"
+  ],
+  "El proyecto contiene una ruta absoluta.": [
+    "The project contains an absolute path.",
+    "项目包含绝对路径。"
+  ],
+  "El proyecto contiene una ruta fuera del archivo.": [
+    "The project contains a path outside the archive.",
+    "项目包含归档之外的路径。"
+  ],
+  "Proyecto vacío.": [
+    "Empty project.",
+    "项目为空。"
+  ],
+  "Versión de proyecto no compatible.": [
+    "Unsupported project version.",
+    "不支持的项目版本。"
+  ],
+  "Lista de páginas no válida.": [
+    "Invalid page list.",
+    "页面列表无效。"
+  ],
+  "Falta una imagen del proyecto: ": [
+    "A project image is missing: ",
+    "缺少项目图像："
+  ],
+  "El proyecto tiene demasiados archivos.": [
+    "The project contains too many files.",
+    "项目包含过多文件。"
+  ],
+  "El proyecto excede el límite de importación (4 GB).": [
+    "The project exceeds the import limit (4 GB).",
+    "项目超过导入限制（4 GB）。"
+  ],
+  "El proyecto contiene archivos duplicados.": [
+    "The project contains duplicate files.",
+    "项目包含重复文件。"
+  ],
+  "Pulsa el campo de página resaltado. Esc cancela.": [
+    "Click the highlighted page field. Esc cancels.",
+    "点击突出显示的页码输入框。按 Esc 取消。"
+  ],
+  "Pulsa las dos esquinas del área. Esc cancela.": [
+    "Click two corners of the area. Esc cancels.",
+    "点击区域的两个角。按 Esc 取消。"
+  ],
+  "Arrastra el área dentro del lector. Esc cancela.": [
+    "Drag the area inside the reader. Esc cancels.",
+    "在阅读器内部拖动以框选区域。按 Esc 取消。"
+  ],
+  "Campo de página": [
+    "Page field",
+    "页码输入框"
+  ],
+  "Fragmento HTML vacío.": [
+    "Empty HTML snippet.",
+    "HTML 片段为空。"
+  ],
+  "El selector coincide con varios elementos. Hazlo más preciso.": [
+    "The selector matches multiple elements. Make it more specific.",
+    "选择器匹配多个元素。请缩小匹配范围。"
+  ],
+  "Captura cancelada.": [
+    "Capture canceled.",
+    "已取消截图。"
+  ],
+  "Preparando.": [
+    "Preparing.",
+    "正在准备。"
+  ],
+  "La página sigue cambiando. Aumenta la espera o desactiva Esperar imagen estable.": [
+    "The page keeps changing. Increase the wait or disable Wait for stable image.",
+    "页面仍在变化。请增加等待时间或关闭等待图像稳定。"
+  ],
+  "El área quedó fuera de la página visible. Selecciónala otra vez.": [
+    "The area is outside the visible page. Select it again.",
+    "区域超出可见页面范围。请重新选择。"
+  ],
+  "Comando no reconocido.": [
+    "Unknown command.",
+    "未知命令。"
+  ],
+  "Activa la pestaña del lector antes de continuar.": [
+    "Activate the reader tab before continuing.",
+    "继续之前请激活阅读器标签页。"
+  ],
+  "No se encontró un elemento único. Selecciónalo directamente en la página.": [
+    "No unique element was found. Select it directly on the page.",
+    "未找到唯一元素。请直接在页面上选择。"
+  ],
+  "Selecciona el campo en la pestaña conectada primero.": [
+    "Select the field in the connected tab first.",
+    "请先在已连接的标签页中选择输入框。"
+  ],
+  "El frame del campo dejó de estar disponible.": [
+    "The field frame is no longer available.",
+    "输入框所在框架已不可用。"
+  ],
+  "No se pudo preparar la página.": [
+    "Could not prepare the page.",
+    "无法准备页面。"
+  ],
+  "No hay área de captura.": [
+    "No capture area selected.",
+    "尚未选择截图区域。"
+  ],
+  "La pestaña cambió durante la captura.": [
+    "The tab changed during capture.",
+    "截图期间标签页已改变。"
+  ],
+  "El tamaño de la pestaña cambió durante la captura.": [
+    "The tab size changed during capture.",
+    "截图期间标签页大小已改变。"
+  ],
+  "El tamaño de la pestaña cambió. Selecciona otra vez el área.": [
+    "The tab size changed. Select the area again.",
+    "标签页大小已改变。请重新选择区域。"
+  ],
+  "Abre Universal Screenshot Taker. La conexión se realizará automáticamente.": [
+    "Open Universal Screenshot Taker. It will connect automatically.",
+    "请打开 Universal Screenshot Taker。连接将自动建立。"
+  ],
+  "Clave no válida o aplicación no disponible.": [
+    "Invalid key or app unavailable.",
+    "密钥无效或应用不可用。"
+  ],
+  "Conectado. Puedes cerrar este popup y volver al lector.": [
+    "Connected. You can close this popup and return to the reader.",
+    "已连接。可以关闭此弹出窗口并返回阅读器。"
+  ],
+  "Desconectado": [
+    "Disconnected",
+    "未连接"
+  ],
+  "Tu lector": [
+    "Your reader",
+    "您的阅读器"
+  ],
+  "Buscando la aplicación…": [
+    "Looking for the app…",
+    "正在查找应用…"
+  ],
+  "Reconectar": [
+    "Reconnect",
+    "重新连接"
+  ],
+  "Desconectar": [
+    "Disconnect",
+    "断开连接"
+  ],
+  "La conexión continúa al cerrar este popup.": [
+    "The connection continues when this popup closes.",
+    "关闭此弹出窗口后连接仍会保持。"
+  ],
+  "Conectar esta pestaña": [
+    "Connect this tab",
+    "连接此标签页"
+  ],
+  "Pestaña: {0}": [
+    "Tab: {0}",
+    "标签页：{0}"
+  ],
+  "0 páginas disponibles": [
+    "0 pages available",
+    "可用页面：0"
+  ],
+  "1. Abre el lector de prueba o tu sitio e inicia sesión normalmente.\n2. Selecciona el campo de página y el área visible.\n3. Prueba Ir a página; luego captura de la 1 a la 3.\n4. Revisa la galería, reconoce texto y exporta.": [
+    "1. Open the test reader or your website and sign in normally.\n2. Select the page field and visible area.\n3. Test Go to page, then capture pages 1 to 3.\n4. Review the gallery, recognize text and export.",
+    "1. 打开测试阅读器或您的网站并正常登录。\n2. 选择页码输入框和可见区域。\n3. 测试跳转到页面，再截取第 1 至第 3 页。\n4. 检查图库、识别文本并导出。"
+  ],
+  "Redimensionar área ": [
+    "Resize area ",
+    "调整区域大小 "
+  ],
+  "Arrastra para ajustar; flechas para ajuste preciso": [
+    "Drag to resize; use arrow keys for precise adjustments",
+    "拖动调整大小；使用方向键精确调整"
+  ],
+  "El campo seleccionado cambió o desapareció. Selecciónalo otra vez.": [
+    "The selected field changed or disappeared. Select it again.",
+    "所选输入框已改变或消失。请重新选择。"
+  ],
+  "Universal Capture · seleccionar campo": [
+    "Universal Capture · select field",
+    "Universal Capture · 选择输入框"
+  ],
+  "Universal Capture · seleccionar área": [
+    "Universal Capture · select area",
+    "Universal Capture · 选择区域"
+  ],
+  "Buscando campos accesibles · Esc para cancelar": [
+    "Looking for accessible fields · Esc to cancel",
+    "正在查找可访问的输入框 · 按 Esc 取消"
+  ],
+  "Inspector: pulsa un campo resaltado · Esc para cancelar": [
+    "Inspector: click a highlighted field · Esc to cancel",
+    "检查器：点击突出显示的输入框 · 按 Esc 取消"
+  ],
+  "Haz clic en las dos esquinas · Esc para cancelar": [
+    "Click two corners · Esc to cancel",
+    "点击两个角 · 按 Esc 取消"
+  ],
+  "Arrastra alrededor de la página · Esc para cancelar": [
+    "Drag around the page · Esc to cancel",
+    "拖动框选页面 · 按 Esc 取消"
+  ],
+  "Selecciona y copia esta ruta": [
+    "Select and copy this path",
+    "选择并复制此路径"
+  ],
+  "Copiar": [
+    "Copy",
+    "复制"
+  ],
+  "El navegador requiere que confirmes la instalación. Sigue estos pasos en tu perfil habitual.": [
+    "Your browser requires you to confirm installation. Follow these steps in your usual profile.",
+    "浏览器要求您确认安装。请在您常用的个人资料中完成以下步骤。"
+  ],
+  "Copia esta dirección, abre una pestaña y pégala en la barra de direcciones. Presiona Enter.": [
+    "Copy this address, open a tab and paste it in the address bar. Press Enter.",
+    "复制此地址，打开一个标签页并粘贴到地址栏，然后按 Enter。"
+  ],
+  "Elige Cargar complemento temporal y selecciona este archivo:": [
+    "Choose Load Temporary Add-on and select this file:",
+    "选择临时载入附加组件，然后选择此文件："
+  ],
+  "Activa Modo desarrollador, elige Cargar descomprimida y selecciona esta carpeta:": [
+    "Enable Developer mode, choose Load unpacked and select this folder:",
+    "启用开发者模式，选择加载已解压的扩展程序，然后选择此文件夹："
+  ],
+  "Regresa a la pestaña del lector y pulsa el icono de Universal Capture. La conexión con la aplicación es automática.": [
+    "Return to the reader tab and click the Universal Capture icon. It connects to the app automatically.",
+    "返回阅读器标签页并点击 Universal Capture 图标。扩展将自动连接应用。"
+  ],
+  "Firefox elimina las extensiones temporales al reiniciar. Una instalación permanente requiere un paquete firmado.": [
+    "Firefox removes temporary extensions on restart. Permanent installation requires a signed package.",
+    "Firefox 重启后会移除临时扩展。永久安装需要已签名的扩展包。"
+  ],
+  "Mantén esta carpeta en su ubicación mientras uses la extensión. No necesitas instalarla otra vez al abrir la aplicación.": [
+    "Keep this folder in place while using the extension. You do not need to install it again when opening the app.",
+    "使用扩展期间，请保留此文件夹的位置。打开应用时无需重新安装扩展。"
+  ],
+  "Copiado.": [
+    "Copied.",
+    "已复制。"
+  ],
+  "Presiona Ctrl+C para copiar la ruta seleccionada.": [
+    "Press Ctrl+C to copy the selected path.",
+    "按 Ctrl+C 复制选中的路径。"
+  ],
+  "Limpiar datos": [
+    "Clear data",
+    "清空数据"
+  ],
+  "Listo para otro documento": [
+    "Ready for another document",
+    "已准备好下一个文档"
+  ],
+  "Introduce el número de la página actual.": [
+    "Enter the current page number.",
+    "请输入当前页码。"
+  ],
+  "Introduce la primera y la última página.": [
+    "Enter the first and last page numbers.",
+    "请输入起始页码和结束页码。"
+  ],
+  "Abre el lector del enlace indicado en la pestaña conectada antes de ir a página.": [
+    "Open the linked reader in the connected tab before going to a page.",
+    "跳转页码前，请在已连接的标签页中打开指定链接的阅读器。"
+  ],
+  "No se pudo recuperar el campo guardado en este lector. Selecciónalo otra vez.": [
+    "The saved field could not be recovered in this reader. Select it again.",
+    "无法在此阅读器中恢复已保存的输入框，请重新选择。"
+  ]
+}

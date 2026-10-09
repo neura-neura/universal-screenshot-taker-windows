@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Universal Capture - Navegador",
+  "version": "1.1.3",
+  "description": "Selecciona elementos DOM y captura la pestaña sin controlar el mouse.",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs",
+    "<all_urls>"
+  ],
+  "background": {
+    "persistent": true,
+    "page": "offscreen.html"
+  },
+  "browser_action": {
+    "default_title": "Conectar esta pestaña con Universal Capture",
+    "default_popup": "panel.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ust-selector@neura-neura",
+      "strict_min_version": "121.0"
+    }
+  }
+}

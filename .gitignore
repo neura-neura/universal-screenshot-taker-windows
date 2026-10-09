@@ -1,0 +1,12 @@
+.reference/
+**/bin/
+**/obj/
+dist/
+.tools/
+TestResults/
+node_modules/
+*.user
+
+VALIDATION.md
+**/*.ustproject
+**/*.log
